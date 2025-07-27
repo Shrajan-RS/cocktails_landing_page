@@ -68,7 +68,7 @@ const Hero = () => {
 
     //defining the start and end of the animation var
     const startValue = isMobile ? "top 50%" : "center 60%";
-    const endValue = isMobile ? "120% top" : "bottom top";
+    const endValue = isMobile ? "133% top" : "bottom top";
 
     // creating the video animation timeline
     const videoTimeline = gsap.timeline({
