@@ -28,12 +28,18 @@ const Navbar = () => {
       }
     );
 
-   
+    gsap.from(".nav-bar", {
+      opacity: 0,
+      delay: 1,
+      duration:1,
+      y:-30
+    })
+    
   });
 
   return (
     <nav className="px-10">
-      <div>
+      <div className="nav-bar">
         <a href="#home" className="flex items-center gap-2">
           <img src="/images/logo.png" alt="logo" />
           <p>Violet Pour</p>

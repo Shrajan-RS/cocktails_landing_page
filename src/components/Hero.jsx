@@ -1,8 +1,13 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
+import { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
+  const videoRef = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 767 }); //react responsive package, this indicates that if maxWidth is less then the 767px then it's mobile
+
   //Animating the heroText, subtexts
   useGSAP(() => {
     const heroSplit = new SplitText(".title", {
@@ -58,8 +63,41 @@ const Hero = () => {
           scrub: true,
         },
       })
-      .to(".right-leaf", { y: 200 },0)
+      .to(".right-leaf", { y: 200 }, 0)
       .to(".left-leaf", { y: -200 }, 0);
+
+    //defining the start and end of the animation var
+    const startValue = isMobile ? "top 50%" : "center 60%";
+    const endValue = isMobile ? "120% top" : "bottom top";
+
+    // creating the video animation timeline
+    const videoTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: "video",
+        start: startValue,
+        end: endValue,
+        scrub: true,
+        pin: true,
+      },
+    });
+
+    videoRef.current.onloadedmetadata = () => {
+      videoTimeline.to(videoRef.current, {
+        currentTime: videoRef.current.duration,
+      });
+    };
+
+    gsap.from(videoRef.current, {
+      y: 200,
+      duration: 1,
+      delay: 2.3,
+      opacity: 0,
+    });
+
+    gsap.from(".para-heading, .view-cocktails", {
+      opacity: 0,
+      delay: 1.6,
+    });
   }, []);
 
   return (
@@ -81,7 +119,7 @@ const Hero = () => {
         <div className="body ">
           <div className="content ">
             <div className="space-y-5 hidden md:block ">
-              <p>Cool. Crisp. Classic.</p>
+              <p className="para-heading">Cool. Crisp. Classic.</p>
               <p className="subtitle">
                 Sip The Spirit <br /> Of Summer
               </p>
@@ -98,6 +136,16 @@ const Hero = () => {
           </div>
         </div>
       </section>
+
+      <div className="video absolute inset-0">
+        <video
+          ref={videoRef}
+          src="/videos/output.mp4"
+          muted
+          playsInline
+          preload="auto"
+        ></video>
+      </div>
     </>
   );
 };
