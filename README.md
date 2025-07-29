@@ -1,12 +1,70 @@
-# React + Vite
+# Violet Pour – Immersive Cocktail Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Recreates a visual cocktail menu website using **React**, **GSAP** animations, and responsive design — inspired by the structure and clarity of Adrian Hajdin's _iphone_ project.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Table of Contents
 
-## Expanding the ESLint configuration
+1. [Introduction](#introduction)
+2. [Tech Stack](#tech-stack)
+3. [Features](#features)
+4. [Getting Started](#getting-started)
+5. [File Structure](#file-structure)
+6. [Usage & Behavior](#usage--behavior)
+7. [Contribute](#contribute)
+8. [Contact & Support](#contact--support)
+9. [License](#license)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🤖 Introduction
+
+**Violet Pour** is a React-based single-page site showcasing cocktails and mocktails with engaging animations. Popular sections like Hero video, Cocktail listings, About, Art transitions, Menu slider, and Contact details are orchestrated through GSAP’s ScrollTrigger and SplitText plugins for a polished, interactive experience.
+
+---
+
+## ⚙️ Tech Stack
+
+- React.js
+- GSAP — ScrollTrigger & SplitText
+- @gsap/react
+- Tailwind CSS (based on observed class names)
+- react-responsive
+
+---
+
+## 🌟 Features
+
+- Smooth scroll-linked animations and parallax effects
+- Character & line-split text animations (SplitText)
+- Animated menu slider with wrapped navigation
+- Adaptive layouts for mobile & desktop
+- Decorative visuals (leaves, grids, masked images)
+- Accessible markup and semantic `aria` usage
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have:
+
+- Node.js ≥ 16
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/violet-pour.git
+cd violet-pour
+npm install
+```
+
+🧠 Inspiration
+This project was created by following the
+📺 JS Mastery YouTube tutorial by Adrian Hajdin.
+
+This project is for educational purposes only. All visual assets and code are intended for personal learning use and not for commercial reproduction.
+

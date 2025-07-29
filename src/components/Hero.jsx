@@ -59,9 +59,9 @@ const Hero = () => {
       .timeline({
         scrollTrigger: {
           trigger: "#hero",
-          start: "top top",     // Start when top of hero section hits top of viewport
-          end: "bottom top",    // End when bottom of hero section hits top of viewport
-          scrub: true,          // Smooth scroll-linked animation
+          start: "top top", // Start when top of hero section hits top of viewport
+          end: "bottom top", // End when bottom of hero section hits top of viewport
+          scrub: true, // Smooth scroll-linked animation
         },
       })
       .to(".right-leaf", { y: 200 }, 0)
@@ -108,7 +108,7 @@ const Hero = () => {
     <>
       {/* Hero Section */}
       <section id="hero" className="noisy">
-        <h1 className="title">MOJITO</h1>
+        <h1 className="title">Violet Pour</h1>
 
         {/* Decorative Leaves */}
         <img

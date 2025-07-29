@@ -19,55 +19,61 @@ const navLinks = [
 
 const cocktailLists = [
   {
-    name: "Chapel Hill Shiraz",
-    country: "AU",
-    detail: "Bottle",
-    price: "$10",
-  },
-  {
-    name: "Caten Malbee",
-    country: "AU",
-    detail: "Bottle",
-    price: "$49",
-  },
-  {
-    name: "Rhino Pale Ale",
-    country: "CA",
+    name: "Royal Stag Whisky",
+    country: "IN",
     detail: "750 ml",
-    price: "$20",
+    price: "₹1200",
   },
   {
-    name: "Irish Guinness",
-    country: "IE",
-    detail: "600 ml",
-    price: "$29",
+    name: "Kingfisher Premium Lager",
+    country: "IN",
+    detail: "650 ml",
+    price: "₹150",
+  },
+  {
+    name: "Old Monk Rum",
+    country: "IN",
+    detail: "750 ml",
+    price: "₹900",
+  },
+  {
+    name: "Sula Sauvignon Blanc",
+    country: "IN",
+    detail: "750 ml",
+    price: "₹1200",
+  },
+  {
+    name: "Goa Feni",
+    country: "IN",
+    detail: "750 ml",
+    price: "₹600",
   },
 ];
 
 const mockTailLists = [
   {
-    name: "Tropical Bloom",
-    country: "US",
-    detail: "Bottle",
-    price: "$10",
+    name: "Mango Lassi",
+    country: "IN",
+    detail: "Glass",
+    price: "₹120",
   },
   {
-    name: "Passionfruit Mint",
-    country: "US",
-    detail: "Bottle",
-    price: "$49",
+    name: "Jaljeera Cooler",
+    country: "IN",
+    detail: "Glass",
+    price: "₹100",
   },
   {
-    name: "Citrus Glow",
-    country: "CA",
-    detail: "750 ml",
-    price: "$20",
+    name: "Virgin Mojito",
+    country: "IN",
+    detail: "Glass",
+    price: "₹150",
   },
   {
-    name: "Lavender Fizz",
-    country: "IE",
-    detail: "600 ml",
-    price: "$29",
+    name: "Cucumber Mint Cooler",
+    country: "IN",
+    detail: "Glass",
+    price: "₹130",
   },
 ];
 
