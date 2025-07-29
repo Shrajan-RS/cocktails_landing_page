@@ -10,12 +10,7 @@ Recreates a visual cocktail menu website using **React**, **GSAP** animations, a
 2. [Tech Stack](#tech-stack)
 3. [Features](#features)
 4. [Getting Started](#getting-started)
-5. [File Structure](#file-structure)
-6. [Usage & Behavior](#usage--behavior)
-7. [Contribute](#contribute)
-8. [Contact & Support](#contact--support)
-9. [License](#license)
-
+5. 
 ---
 
 ## 🤖 Introduction
