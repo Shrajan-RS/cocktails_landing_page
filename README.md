@@ -1,6 +1,6 @@
 # Violet Pour – Immersive Cocktail Experience
 
-Recreates a visual cocktail menu website using **React**, **GSAP** animations, and responsive design — inspired by the structure and clarity of Adrian Hajdin's _iphone_ project.
+Recreates a visual cocktail menu website using **React**, **GSAP** animations, and responsive design
 
 ---
 
